@@ -1,5 +1,7 @@
 #!/bin/sh
 
-cd /home/pi/projects
+BASEDIR=$(dirname $0)
+
+cd BASEDIR
 sudo python ssh.py &
 cd /
