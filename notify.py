@@ -3,8 +3,8 @@ import RPi.GPIO as GPIO # For Raspberry Pi GPIO pins
 from subprocess import Popen, PIPE # To be able to call a shell script
 import time # So we can pause with sleep()
 
-led_pin = 29 # Choose a digital i/o pin
-buzzer_pin = 15 # Choose a pin with PWM
+led_pin = 29 # Choose any GPIO pin
+buzzer_pin = 15 # Choose any GPIO pin (will use software PWM)
 pause_length = 2 # How frequently should the script check for guests (seconds)
 
 # Setup the board and pins
